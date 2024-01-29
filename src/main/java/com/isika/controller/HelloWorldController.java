@@ -8,6 +8,6 @@ public class HelloWorldController {
 
 	@GetMapping
 	public String helloWorld() {
-		return "{'message': 'Hello World! V1'}";
+		return "{'message': 'Hello World! V1 + Jenkinsfile'}";
 	}
 }
