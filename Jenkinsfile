@@ -12,15 +12,6 @@ pipeline {
     }
 
     stages {
-        stage ('Github') {
-            steps {
-                echo '--=====-- Connecting to Github  --======-- '
-                git (
-                    url: "https://github.com/YannC95/demo-ebs.git",
-                    branch: "master"
-                )
-            }
-        }
         stage('Build') {
             steps {
                 echo '--=====-- Building App  --======-- '
